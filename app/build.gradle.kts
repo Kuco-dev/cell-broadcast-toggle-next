@@ -38,10 +38,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Lets a debug build sit next to an installed release build.
+            applicationIdSuffix = ".debug"
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             signingConfig = signingConfigs.findByName("release")
         }
     }
@@ -61,4 +65,7 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.libadb.android)
+    implementation(libs.conscrypt.android)
+    implementation(libs.bouncycastle.pkix)
 }

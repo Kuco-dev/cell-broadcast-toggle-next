@@ -110,7 +110,7 @@ fun StartGuide(
 }
 
 @Composable
-private fun GuideHeader(@StringRes title: Int, @StringRes intro: Int) {
+internal fun GuideHeader(@StringRes title: Int, @StringRes intro: Int) {
     ElevatedCard(
         Modifier.fillMaxWidth(),
         colors = CardDefaults.elevatedCardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
@@ -123,7 +123,7 @@ private fun GuideHeader(@StringRes title: Int, @StringRes intro: Int) {
 }
 
 @Composable
-private fun StepCard(
+internal fun StepCard(
     number: Int,
     @StringRes title: Int,
     @StringRes badge: Int? = null,
@@ -197,12 +197,12 @@ private fun GuideFooter(onRecheck: () -> Unit) {
 }
 
 @Composable
-private fun BodyText(@StringRes text: Int) {
+internal fun BodyText(@StringRes text: Int) {
     Text(stringResource(text), style = MaterialTheme.typography.bodyMedium)
 }
 
 @Composable
-private fun TipText(@StringRes text: Int) {
+internal fun TipText(@StringRes text: Int) {
     Text(
         stringResource(text),
         style = MaterialTheme.typography.bodySmall,

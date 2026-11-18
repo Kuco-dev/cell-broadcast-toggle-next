@@ -1,5 +1,6 @@
 package com.kamilake.cbtoggle
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,6 +38,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kamilake.cbtoggle.MainViewModel.Phase
+import com.kamilake.cbtoggle.watch.WatchActivity
 
 private val TARGET_LABELS = listOf(R.string.pkg_receiver, R.string.pkg_service, R.string.pkg_receiver)
 
@@ -107,6 +109,25 @@ private fun MainScreen(vm: MainViewModel) {
                 }
             }
             vm.error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
+            if (vm.phase == Phase.Ready) WatchEntryCard()
+        }
+    }
+}
+
+@Composable
+private fun WatchEntryCard() {
+    val context = LocalContext.current
+    OutlinedCard(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(stringResource(R.string.open_watch), style = MaterialTheme.typography.titleMedium)
+            Text(
+                stringResource(R.string.open_watch_body),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            FilledTonalButton(onClick = { context.startActivity(Intent(context, WatchActivity::class.java)) }) {
+                Text(stringResource(R.string.watch_title))
+            }
         }
     }
 }
