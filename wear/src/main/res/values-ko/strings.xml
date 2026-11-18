@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">재난문자 토글</string>
+    <string name="toggle_title">재난문자 수신</string>
+    <string name="summary_on">켜짐</string>
+    <string name="summary_off">꺼짐</string>
+    <string name="summary_partial">일부만 켜짐</string>
+    <string name="summary_none">패키지를 찾지 못함</string>
+    <string name="warning">꺼져 있으면 이 워치에 재난문자가 오지 않습니다.</string>
+    <string name="shizuku_not_installed">Shizuku가 필요합니다. 이 워치에 Shizuku를 설치한 뒤 다시 확인하세요.</string>
+    <string name="shizuku_not_running">Shizuku가 꺼져 있습니다. 컴퓨터에서 adb로 시작한 뒤 다시 확인하세요.</string>
+    <string name="permission_needed">재난문자 앱을 바꾸려면 Shizuku 권한이 필요합니다.</string>
+    <string name="permission_denied">Shizuku 권한이 거부됐습니다. Shizuku 앱에서 허용한 뒤 다시 확인하세요.</string>
+    <string name="grant">권한 요청</string>
+    <string name="retry">다시 확인</string>
+    <string name="open_shizuku">Shizuku 열기</string>
+    <string name="state_enabled">켜짐</string>
+    <string name="state_disabled">꺼짐</string>
+</resources>
