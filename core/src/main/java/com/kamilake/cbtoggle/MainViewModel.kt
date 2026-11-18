@@ -60,7 +60,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     private val serviceArgs = Shizuku.UserServiceArgs(ComponentName(app, CellBroadcastService::class.java))
         .daemon(false)
         .processNameSuffix("service")
-        .version(BuildConfig.VERSION_CODE)
+        // Shizuku restarts the service when this changes, so an app update runs the new code.
+        .version(app.packageManager.getPackageInfo(app.packageName, 0).longVersionCode.toInt())
 
     private val connection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName, binder: IBinder?) {

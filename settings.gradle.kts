@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "cbtoggle"
-include(":app")
+include(":app", ":core")

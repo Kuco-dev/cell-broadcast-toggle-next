@@ -6,7 +6,7 @@ Licensed under the MIT License (see LICENSE).
 
 This project includes the following third-party material.
 
-App icon (app/src/main/res/mipmap-*/ic_launcher_foreground.png)
+App icon (core/src/main/res/mipmap-*/ic_launcher_foreground.png)
   Source: Android Open Source Project, packages/apps/CellBroadcastReceiver
           res/mipmap-*/ic_launcher_cell_broadcast_foreground.png
           https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver
