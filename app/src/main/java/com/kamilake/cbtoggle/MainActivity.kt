@@ -38,7 +38,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kamilake.cbtoggle.MainViewModel.Phase
 
-private val TARGET_LABELS = listOf(R.string.pkg_receiver, R.string.pkg_service)
+private val TARGET_LABELS = listOf(R.string.pkg_receiver, R.string.pkg_service, R.string.pkg_receiver)
 
 class MainActivity : ComponentActivity() {
 

@@ -6,6 +6,8 @@ import kotlin.system.exitProcess
 val TARGET_PACKAGES = listOf(
     "com.google.android.cellbroadcastreceiver",
     "com.google.android.cellbroadcastservice",
+    // AOSP receiver, used instead of the Google one on Wear OS (e.g. Galaxy Watch).
+    "com.android.cellbroadcastreceiver",
 )
 
 /** Runs in a separate process with Shizuku's identity (shell when Shizuku is started via adb). */
