@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="disclaimer_title">시작하기 전에</string>
-    <string name="disclaimer_body">이 앱은 재난문자를 받는 시스템 앱을 끕니다. 꺼져 있는 동안 이 기기에는 지진·해일·대피 경보를 포함한 어떤 재난문자도 표시되지 않습니다.\n\n진열용·테스트용 기기처럼 다른 방법으로 재난문자를 받고 있는 기기에서만 사용하세요. 재난문자를 끄는 결정과 그로 인해 생기는 결과에 대한 책임은 사용자에게 있습니다.\n\n이 앱은 MIT 라이선스에 따라 어떠한 보증도 없이 \'있는 그대로\' 제공됩니다.</string>
+    <string name="disclaimer_body">이 앱은 Shizuku의 셸 권한으로 재난문자를 받는 시스템 앱을 끄고 켭니다.\n\n끄면 지진·대피 경보를 포함한 모든 재난문자가 이 기기에 오지 않습니다. 진열용·개발용 기기처럼 실제 경보를 다른 기기로 받고 있을 때만 사용하세요. 평소 쓰는 휴대전화나 워치에서는 사용하지 마세요.\n\n패키지를 삭제하지 않으므로 언제든 같은 스위치로 되돌릴 수 있습니다. 꺼진 상태는 재부팅 후에도 유지되니, 더 이상 필요 없으면 다시 켜 주세요.\n\n이 앱은 MIT 라이선스에 따라 어떠한 보증도 없이 제공됩니다. 재난문자를 끄거나 켜서 생기는 결과에 대한 책임은 사용자에게 있습니다.</string>
     <string name="disclaimer_accept">동의합니다</string>
     <string name="disclaimer_exit">종료</string>
 </resources>

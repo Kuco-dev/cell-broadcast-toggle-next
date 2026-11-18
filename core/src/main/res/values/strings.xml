@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="disclaimer_title">Before you start</string>
-    <string name="disclaimer_body">This app turns off the system apps that receive wireless emergency alerts. While they are off, this device will not show any emergency alerts, including earthquake, tsunami and evacuation alerts.\n\nOnly use it on a device where you get these alerts some other way, such as a display or test device. You are responsible for turning alerts off and for anything that results from it.\n\nThis app is provided \"as is\" under the MIT License, without warranty of any kind.</string>
+    <string name="disclaimer_body">This app uses Shizuku\'s shell permission to turn off and on the system apps that receive emergency alerts.\n\nWhile they are off, no emergency alerts reach this device, including earthquake and evacuation alerts. Only use it when you get real alerts on another device, such as on a display or development device. Do not use it on the phone or watch you use every day.\n\nNothing is uninstalled, so the same switch turns alerts back on at any time. The off state stays after a reboot, so turn alerts back on when you no longer need them off.\n\nThis app is provided under the MIT License without warranty of any kind. You are responsible for the results of turning alerts off or on.</string>
     <string name="disclaimer_accept">I agree</string>
     <string name="disclaimer_exit">Exit</string>
 </resources>
