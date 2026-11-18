@@ -11,8 +11,7 @@ android {
     }
 
     defaultConfig {
-        // Wear OS 3 is API 30; the phone app raises this to 31 for dynamic color.
-        minSdk = 30
+        minSdk = 31
         consumerProguardFiles("consumer-rules.pro")
     }
 
