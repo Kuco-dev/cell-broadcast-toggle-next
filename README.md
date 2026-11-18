@@ -29,15 +29,19 @@ SHA-256: b0:4c:dc:8c:a4:36:17:8c:b0:c9:c8:8b:e4:ec:45:1d:5a:d9:a4:0b:16:58:01:eb
 apksigner verify --print-certs cell-broadcast-toggle.apk
 ```
 
-## 첫 실행 동의
-
-휴대전화와 워치 모두 처음 실행하면 면책 안내를 보여 줍니다. "동의합니다"를 누르기 전에는 Shizuku에 접근하지 않고, "종료"를 누르면 앱이 닫힙니다. 동의 여부는 기기마다 따로 저장되며, 앱 데이터를 지우면 다시 묻습니다.
-
 ## 스크린샷
 
 | 꺼짐 | 켜짐 | Shizuku 권한 요청 |
 |:---:|:---:|:---:|
 | <img src="docs/screenshots/main-off.png" width="240" alt="재난문자가 꺼진 상태"> | <img src="docs/screenshots/main-on.png" width="240" alt="재난문자가 켜진 상태"> | <img src="docs/screenshots/permission.png" width="240" alt="Shizuku 권한 요청 창"> |
+
+## 첫 실행 동의
+
+| 휴대전화 | 워치 |
+|:---:|:---:|
+| <img src="docs/screenshots/disclaimer.png" width="240" alt="휴대전화 첫 실행 동의 화면"> | <img src="docs/screenshots/wear/disclaimer.png" width="200" alt="워치 첫 실행 동의 화면"> |
+
+휴대전화와 워치 모두 처음 실행하면 면책 안내를 보여 줍니다. "동의합니다"를 누르기 전에는 Shizuku에 접근하지 않고, "종료"를 누르면 앱이 닫힙니다. 동의 여부는 기기마다 따로 저장되며, 앱 데이터를 지우면 다시 묻습니다.
 
 ## 동작 방식
 
@@ -94,11 +98,11 @@ Shizuku가 없거나 꺼져 있으면 앱이 상황에 맞는 안내를 보여 �
 
 ## Wear OS 워치
 
-| 첫 실행 동의 | 켜짐 | 꺼짐 |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/wear/disclaimer.png" width="200" alt="워치 동의 화면"> | <img src="docs/screenshots/wear/main-on.png" width="200" alt="워치에서 재난문자가 켜진 상태"> | <img src="docs/screenshots/wear/main-off.png" width="200" alt="워치에서 재난문자가 꺼진 상태"> |
+| 켜짐 | 꺼짐 |
+|:---:|:---:|
+| <img src="docs/screenshots/wear/main-on.png" width="200" alt="워치에서 재난문자가 켜진 상태"> | <img src="docs/screenshots/wear/main-off.png" width="200" alt="워치에서 재난문자가 꺼진 상태"> |
 
-워치 앱은 휴대전화 앱과 같은 방식으로 동작하지만, 워치 화면에 맞게 스위치 하나만 보여 줍니다. 워치에서는 Shizuku 설치와 시작을 컴퓨터의 adb로 하는 것을 기준으로 안내합니다.
+워치 앱은 휴대전화 앱과 같은 방식으로 동작하지만, 워치 화면에 맞게 스위치 하나만 보여 줍니다. 워치에서는 Shizuku 설치와 시작을 컴퓨터의 adb로 하는 것을 기준으로 안내합니다. 갤럭시 워치에는 보안 위험 자동 차단이 없어서 이 단계는 휴대전화에서만 안내합니다.
 
 1. 워치에서 설정 → 개발자 옵션 → 무선 디버깅을 켜고, "새 기기 페어링"에 나오는 주소와 코드로 컴퓨터에서 페어링·연결합니다.
 
